@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Vazquez</title>
+    <link rel="shortcut icon" href="./img/icons8-rubber-duck-48.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: #ede1e1;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #111;
+        }
+
+        /* Encabezado */
+        header {
+            text-align: left;
+            max-width: 1200px;
+            margin: 60px auto 40px;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        header h1 span {
+            display: block;
+            font-weight: 300;
+        }
+
+        header p {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            max-width: 250px;
+            margin: 0;
+            text-align: right;
+        }
+
+        /* Galería */
+        .gallery {
+            column-count: 3;
+            column-gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery img:hover {
+            opacity: 0.85;
+        }
+
+        a {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            position: fixed;
+        }
+
+        a img {
+            width: 3em;
+        }
+
+        .gallery video {
+            width: 100%;
+            margin-bottom: 10px;
+            display: block;
+            border-radius: 3px;
+        }
+
+
+        /* Responsive */
+
+        @media (max-width: 575px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+
+            header p {
+                margin: auto;
+                margin-top: 10px;
+                font-size: 10px;
+            }
+
+            header h1 {
+                margin: auto;
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span>LAURA</span>VAZQUEZ</h1>
+        <p>FOTOGRAFIA, EDICIÓN Y<br>TRATAMIENTO DE IMAGENES</p>
+    </header>
+
+    <section class="gallery">
+        <img src="./img/foto1.PNG">
+        <img src="./img/foto12.jpg">
+        <img src="./img/foto3.PNG">
+        <img src="./img/foto4.PNG">
+        <img src="./img/foto5.PNG">
+        <img src="./img/foto6.PNG">
+        <img src="./img/foto7.PNG">
+        <img src="./img/foto8.jpg">
+        <img src="./img/foto9.PNG">
+        <img src="./img/foto10.jpg">
+        <img src="./img/foto11.jpg">
+        <img src="./img/foto14.jpg">
+        <img src="./img/foto13.jpg">
+        <img src="./img/foto2.PNG">
+        <video controls muted loop playsinline>
+            <source src="./video/video1.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+        <img src="./img/foto15.jpg">
+        <img src="./img/foto16.jpg">
+        <img src="./img/foto17.jpg">
+        <img src="./img/foto18.jpg">
+        <img src="./img/foto19.jpg">
+        <img src="./img/foto20.jpg">
+        <img src="./img/foto21.jpg">
+        <img src="./img/foto22.jpg">
+        <img src="./img/foto23.jpg">
+        <img src="./img/foto24.jpg">
+        <video controls muted loop playsinline>
+            <source src="./video/video2.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+        <img src="./img/foto25.jpg">
+        <img src="./img/foto26.jpg">
+        <img src="./img/foto27.jpg">
+    </section>
+
+    <a target="_blank"
+        href="https://www.instagram.com/lauravaazqueez?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+            src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="instagram"></a>
+</body>
+
+</html>
