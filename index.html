@@ -87,6 +87,23 @@
             border-radius: 3px;
         }
 
+        .video-wrapper {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 3px;
+        }
+
 
         /* Responsive */
 
@@ -132,10 +149,12 @@
         <img src="./img/foto14.jpg">
         <img src="./img/foto19.jpg">
         <img src="./img/foto2.PNG">
-        <video controls muted playsinline poster="./img/foto29.jpg" preload="metadata">
-            <source src="./video/video1.mp4" type="video/mp4">
-            Tu navegador no soporta video.
-        </video>
+        <div class="video-wrapper">
+            <video controls muted playsinline poster="./img/foto29.jpg" preload="metadata">
+                <source src="./video/video1.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
         <img src="./img/foto15.jpg">
         <img src="./img/foto16.jpg">
         <img src="./img/foto17.jpg">
@@ -146,10 +165,12 @@
         <img src="./img/foto22.jpg">
         <img src="./img/foto23.jpg">
         <img src="./img/foto24.jpg">
-        <video controls muted playsinline poster="./img/foto28.jpg">
-            <source src="./video/video2.mp4" type="video/mp4">
-            Tu navegador no soporta video.
-        </video>
+        <div class="video-wrapper">
+            <video controls muted playsinline poster="./img/foto28.jpg" preload="metadata">
+                <source src="./video/video2.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
         <img src="./img/foto25.jpg">
         <img src="./img/foto26.jpg">
         <img src="./img/foto27.jpg">
