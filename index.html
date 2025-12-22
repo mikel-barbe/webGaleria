@@ -69,6 +69,29 @@
             opacity: 0.85;
         }
 
+        .contenedor {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            /* Inicialmente oculto */
+            z-index: 1000;
+            width: 80vw;
+            height: 80vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .imagen-ampliada {
+            width: 100%;
+            max-width: 80%;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0);
+        }
+
         a {
             position: absolute;
             right: 1rem;
@@ -132,54 +155,117 @@
 <body>
     <header>
         <h1><span>LAURA</span>VAZQUEZ</h1>
-        <p>FOTOGRAFIA, EDICIÓN Y<br>TRATAMIENTO DE IMAGENES</p>
+        <p>UNA FOTO MIL PALABRAS</p>
     </header>
 
     <section class="gallery">
-        <img src="./img/foto1.PNG">
-        <img src="./img/foto12.jpg">
-        <img src="./img/foto3.PNG">
-        <img src="./img/foto4.PNG">
-        <img src="./img/foto5.PNG">
-        <img src="./img/foto6.PNG">
-        <img src="./img/foto7.PNG">
-        <img src="./img/foto8.jpg">
-        <img src="./img/foto9.PNG">
-        <img src="./img/foto10.jpg">
-        <img src="./img/foto11.jpg">
-        <img src="./img/foto14.jpg">
-        <img src="./img/foto19.jpg">
-        <img src="./img/foto2.PNG">
+        <img src="/img/foto37.jpg" class="imagen">
         <div class="video-wrapper">
+            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+                <source src="./video/video4.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+        <img src="./img/foto1.PNG" class="imagen">
+        <img src="./img/foto12.jpg" class="imagen">
+        <img src="./img/foto3.PNG" class="imagen">
+        <img src="./img/foto4.PNG" class="imagen">
+        <img src="/img/foto39.jpg" class="imagen">
+        <img src="./img/foto5.PNG" class="imagen">
+        <img src="/img/foto34.jpg" class="imagen">
+        <img src="./img/foto6.PNG" class="imagen">
+        <img src="./img/foto7.PNG" class="imagen">
+        <img src="./img/foto8.jpg" class="imagen">
+        <img src="/img/foto38.jpg" class="imagen">
+        <div class="video-wrapper">
+            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+                <source src="./video/video5.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+        <img src="./img/foto9.PNG" class="imagen">
+        <img src="./img/foto10.jpg" class="imagen">
+        <img src="/img/foto35.jpg" class="imagen">
+        <img src="./img/foto11.jpg" class="imagen">
+        <img src="./img/foto14.jpg" class="imagen">
+        <img src="./img/foto19.jpg" class="imagen">
+        <img src="./img/foto2.PNG" class="imagen">
+        <div class="video-wrapper" class="imagen">
             <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
                 <source src="./video/video1.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto15.jpg">
-        <img src="./img/foto16.jpg">
-        <img src="./img/foto17.jpg">
-        <img src="./img/foto18.jpg">
-        <img src="./img/foto13.jpg">
-        <img src="./img/foto20.jpg">
-        <img src="./img/foto21.jpg">
-        <img src="./img/foto22.jpg">
-        <img src="./img/foto23.jpg">
-        <img src="./img/foto24.jpg">
+        <img src="./img/foto15.jpg" class="imagen">
+        <img src="/img/foto32.jpg" class="imagen">
+        <img src="./img/foto16.jpg" class="imagen">
+        <img src="./img/foto17.jpg" class="imagen">
+        <img src="./img/foto18.jpg" class="imagen">
+        <img src="./img/foto13.jpg" class="imagen">
+        <div class="video-wrapper">
+            <video controls muted playsinline autoplay poster="./img/foto28.jpg" preload="metadata">
+                <source src="./video/video3.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+        <img src="./img/foto20.jpg" class="imagen">
+        <img src="./img/foto21.jpg" class="imagen">
+        <img src="./img/foto22.jpg" class="imagen">
+        <img src="./img/foto23.jpg" class="imagen">
+        <img src="./img/foto24.jpg" class="imagen">
         <div class="video-wrapper">
             <video controls muted playsinline autoplay poster="./img/foto28.jpg" preload="metadata">
                 <source src="./video/video2.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto25.jpg">
-        <img src="./img/foto26.jpg">
-        <img src="./img/foto27.jpg">
+        <img src="./img/foto25.jpg" class="imagen">
+        <img src="./img/foto26.jpg" class="imagen">
+        <img src="./img/foto27.jpg" class="imagen">
+        <img src="/img/foto36.jpg" class="imagen">
+        <div class="video-wrapper" class="imagen">
+            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+                <source src="./video/video6.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+        <img src="/img/foto30.jpg" class="imagen">
+        <img src="/img/foto31.jpg" class="imagen">
+        <img src="/img/foto33.jpg" class="imagen">
     </section>
 
     <a target="_blank"
         href="https://www.instagram.com/lauravaazqueez?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
             src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="instagram"></a>
+
+    <div id="contenedor">
+        <img src="#" id="imagenAmpliada">
+    </div>
+
+
+    <script>
+        const elementoDiv = document.getElementById('contenedor')
+        const elementoImg = document.getElementById('imagenAmpliada')
+        const imagenes = document.querySelectorAll('.imagen')
+
+        imagenes.forEach(imagen => {
+            imagen.addEventListener('click', () => {
+                elementoDiv.style.display = 'flex';
+                elementoImg.src = imagen.src;
+                setTimeout(() => {
+                    elementoImg.style.transform = 'scale(1)'
+                }, 10)
+            })
+        })
+        // Cerrar la ventana modal cuando el usuario hace clic fuera de la imagen ampliada
+        elementoDiv.addEventListener("click", (e) => {
+            if (e.target === elementoDiv) {
+                elementoDiv.style.display = "none";  // Ocultar la ventana modal
+                elementoImg.style.transform = "scale(0)";  // Volver a la escala inicial
+            }
+        });
+
+    </script>
 </body>
 
 </html>
