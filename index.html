@@ -99,6 +99,32 @@
             position: fixed;
         }
 
+        #modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        #modal img,
+        #modal video {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 5px;
+        }
+
+        #cerrar {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
         a img {
             width: 3em;
         }
@@ -158,80 +184,104 @@
         <p>UNA FOTO MIL PALABRAS</p>
     </header>
 
+    <div id="modal">
+        <span id="cerrar">✕</span>
+        <img id="modalImg">
+        <video id="modalVideo" controls></video>
+    </div>
+
+
     <section class="gallery">
-        <img src="img\foto37.jpg" class="imagen">
+        <img src="./img/foto51.jpeg" class="ampliable">
+        <img src="./img/foto43.jpeg" class="ampliable">
+        <img src="./img/foto29.jpg" class="ampliable">
+        <img src="img\foto37.jpg" class="ampliable">
         <div class="video-wrapper">
-            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+            <video class="ampliable" controls muted playsinline autoplay preload="metadata">
                 <source src="./video/video4.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto1.PNG" class="imagen">
-        <img src="./img/foto12.jpg" class="imagen">
-        <img src="./img/foto3.PNG" class="imagen">
-        <img src="./img/foto4.PNG" class="imagen">
-        <img src="./img/foto39.jpg" class="imagen">
-        <img src="./img/foto5.PNG" class="imagen">
-        <img src="./img/foto34.jpg" class="imagen">
-        <img src="./img/foto6.PNG" class="imagen">
-        <img src="./img/foto7.PNG" class="imagen">
-        <img src="./img/foto8.jpg" class="imagen">
-        <img src="./img/foto38.jpg" class="imagen">
+        <img src="./img/foto45.jpeg" class="ampliable">
+        <img src="./img/foto1.PNG" class="ampliable">
+        <img src="./img/foto12.jpg" class="ampliable">
+        <img src="./img/foto3.PNG" class="ampliable">
+        <img src="./img/foto4.PNG" class="ampliable">
+        <img src="./img/foto39.jpg" class="ampliable">
+        <img src="./img/foto5.PNG" class="ampliable">
+        <img src="./img/foto34.jpg" class="ampliable">
+        <img src="./img/foto6.PNG" class="ampliable">
+        <img src="./img/foto7.PNG" class="ampliable">
+        <img src="./img/foto8.jpg" class="ampliable">
+        <img src="./img/foto38.jpg" class="ampliable">
         <div class="video-wrapper">
-            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+            <video class="ampliable" controls muted playsinline autoplay preload="metadata">
                 <source src="./video/video5.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto9.PNG" class="imagen">
-        <img src="./img/foto10.jpg" class="imagen">
-        <img src="./img/foto35.jpg" class="imagen">
-        <img src="./img/foto11.jpg" class="imagen">
-        <img src="./img/foto14.jpg" class="imagen">
-        <img src="./img/foto19.jpg" class="imagen">
-        <img src="./img/foto2.PNG" class="imagen">
-        <div class="video-wrapper" class="imagen">
-            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+        <img src="./img/foto52.jpeg" class="ampliable">
+        <img src="./img/foto9.PNG" class="ampliable">
+        <img src="./img/foto10.jpg" class="ampliable">
+        <img src="./img/foto35.jpg" class="ampliable">
+        <img src="./img/foto50.jpeg" class="ampliable">
+        <img src="./img/foto11.jpg" class="ampliable">
+        <img src="./img/foto14.jpg" class="ampliable">
+        <img src="./img/foto19.jpg" class="ampliable">
+        <img src="./img/foto42.jpeg" class="ampliable">
+        <img src="./img/foto2.PNG" class="ampliable">
+        <div class="video-wrapper" class="ampliable">
+            <video class="ampliable" controls muted playsinline autoplay preload="metadata">
                 <source src="./video/video1.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto15.jpg" class="imagen">
-        <img src="./img/foto32.jpg" class="imagen">
-        <img src="./img/foto16.jpg" class="imagen">
-        <img src="./img/foto17.jpg" class="imagen">
-        <img src="./img/foto18.jpg" class="imagen">
-        <img src="./img/foto13.jpg" class="imagen">
-        <div class="video-wrapper">
-            <video controls muted playsinline autoplay poster="./img/foto28.jpg" preload="metadata">
+        <img src="./img/foto41.jpeg" class="ampliable">
+        <img src="./img/foto15.jpg" class="ampliable">
+        <img src="./img/foto32.jpg" class="ampliable">
+        <img src="./img/foto48.jpeg" class="ampliable">
+        <img src="./img/foto16.jpg" class="ampliable">
+        <img src="./img/foto17.jpg" class="ampliable">
+        <img src="./img/foto18.jpg" class="ampliable">
+        <img src="./img/foto54.jpeg" class="ampliable">
+        <img src="./img/foto13.jpg" class="ampliable">
+        <div class="video-wrapper" class="ampliable">
+            <video class="ampliable" controls muted playsinline autoplay preload="metadata">
                 <source src="./video/video3.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto20.jpg" class="imagen">
-        <img src="./img/foto21.jpg" class="imagen">
-        <img src="./img/foto22.jpg" class="imagen">
-        <img src="./img/foto23.jpg" class="imagen">
-        <img src="./img/foto24.jpg" class="imagen">
+        <img src="./img/foto49.jpeg" class="ampliable">
+        <img src="./img/foto20.jpg" class="ampliable">
+        <img src="./img/foto21.jpg" class="ampliable">
+        <img src="./img/foto22.jpg" class="ampliable">
+        <img src="./img/foto55.jpeg" class="ampliable">
+        <img src="./img/foto23.jpg" class="ampliable">
+        <img src="./img/foto24.jpg" class="ampliable">
         <div class="video-wrapper">
-            <video controls muted playsinline autoplay poster="./img/foto28.jpg" preload="metadata">
+            <video class="ampliable" controls muted playsinline autoplay preload="metadata">
                 <source src="./video/video2.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto25.jpg" class="imagen">
-        <img src="./img/foto26.jpg" class="imagen">
-        <img src="./img/foto27.jpg" class="imagen">
-        <img src="./img/foto36.jpg" class="imagen">
-        <div class="video-wrapper" class="imagen">
-            <video controls muted playsinline autoplay poster="./img/foto29.jpg" preload="metadata">
+        <img src="./img/foto25.jpg" class="ampliable">
+        <img src="./img/foto46.jpeg" class="ampliable">
+        <img src="./img/foto26.jpg" class="ampliable">
+        <img src="./img/foto27.jpg" class="ampliable">
+        <img src="./img/foto36.jpg" class="ampliable">
+        <div class="video-wrapper">
+            <video controls muted playsinline autoplay preload="metadata" class="ampliable">
                 <source src="./video/video6.mp4" type="video/mp4">
                 Tu navegador no soporta video.
             </video>
         </div>
-        <img src="./img/foto30.jpg" class="imagen">
-        <img src="./img/foto31.jpg" class="imagen">
-        <img src="./img/foto33.jpg" class="imagen">
+        <img src="./img/foto30.jpg" class="ampliable">
+        <img src="./img/foto53.jpeg" class="ampliable">
+        <img src="./img/foto31.jpg" class="ampliable">
+        <img src="./img/foto33.jpg" class="ampliable">
+        <img src="./img/foto40.jpeg" class="ampliable">
+        <img src="./img/foto44.jpeg" class="ampliable">
+        <img src="./img/foto47.jpeg" class="ampliable">
     </section>
 
     <a target="_blank"
@@ -244,28 +294,42 @@
 
 
     <script>
-        const elementoDiv = document.getElementById('contenedor')
-        const elementoImg = document.getElementById('imagenAmpliada')
-        const imagenes = document.querySelectorAll('.imagen')
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        const modalVideo = document.getElementById('modalVideo');
+        const cerrar = document.getElementById('cerrar');
 
-        imagenes.forEach(imagen => {
-            imagen.addEventListener('click', () => {
-                elementoDiv.style.display = 'flex';
-                elementoImg.src = imagen.src;
-                setTimeout(() => {
-                    elementoImg.style.transform = 'scale(1)'
-                }, 10)
-            })
-        })
-        // Cerrar la ventana modal cuando el usuario hace clic fuera de la imagen ampliada
-        elementoDiv.addEventListener("click", (e) => {
-            if (e.target === elementoDiv) {
-                elementoDiv.style.display = "none";  // Ocultar la ventana modal
-                elementoImg.style.transform = "scale(0)";  // Volver a la escala inicial
-            }
+        document.querySelectorAll('.ampliable').forEach(el => {
+            el.addEventListener('click', () => {
+                modal.style.display = 'flex';
+
+                if (el.tagName === 'IMG') {
+                    modalVideo.style.display = 'none';
+                    modalImg.style.display = 'block';
+                    modalImg.src = el.src;
+                }
+
+                if (el.tagName === 'VIDEO') {
+                    modalImg.style.display = 'none';
+                    modalVideo.style.display = 'block';
+                    modalVideo.src = el.querySelector('source').src;
+                    modalVideo.play();
+                }
+            });
         });
 
+        cerrar.addEventListener('click', cerrarModal);
+        modal.addEventListener('click', e => {
+            if (e.target === modal) cerrarModal();
+        });
+
+        function cerrarModal() {
+            modal.style.display = 'none';
+            modalVideo.pause();
+            modalVideo.src = '';
+        }
     </script>
+
 </body>
 
 </html>
